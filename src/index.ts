@@ -9,8 +9,8 @@ app.use(express.json());
 //routes
 app.use('/api', route);
 
+const PORT : any  = process.env.PORT || 3021
 
-
-app.listen('3021',() : void=>{
+app.listen( PORT,() : void=>{
     console.log('server is running 3021')
 })
